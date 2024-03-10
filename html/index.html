@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.typeit/3.0.1/typeit.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <title>Sistema de control de agua</title>
 </head>
 
 <body>
     <main>
 
-        <section class="snapp1">
+        <section id="pantall1">
             <header>
                 <div class="header">
                     <div class="">
-                        <img src="./img/pngfind.com-gota-de-agua-png-4591579.png" alt="logo">
+                        <img src="../img/_59f0c28e-5f71-4268-a36d-7eb8708df9a6.jpeg" alt="logo">
                     </div>
                     <div class="divbotonesheader">
                         <button class="dropbtn">
@@ -30,9 +34,9 @@
                             </span>
                             <div>
                                 <div class="dropdown-content">
-                                    <a href="#">Home</a>
-                                    <a href="#">Información</a>
-                                    <a href="#">Descargar</a>
+                                    <a href="#pantalla1">Home</a>
+                                    <a href="#pantalla2">Información</a>
+                                    <a href="#pantalla3">Descargar</a>
                                 </div>
                             </div>
                         </div>
@@ -52,32 +56,47 @@
                     </div>
                     <div class="cosasUno">
                         <div class="cosas">
-                            <div class="fuente">
-                                <div class="fuente">
-                                    <p id="texto-escrito"><span id="cursor"></span></p>
-                                </div>
-                            </div>
-                            <div>
+                            <p id="ejemplo"></p>
+                            <div class="info">
                                 <ul>
-                                    <li>Notificaciones en tiempo real</li>
-                                    <li>Estadísticas en tiempo real</li>
-                                    <li>Aplicaion facil de usar</li>
+                                    <span>
+                                        <i class="fi fi-rr-bell-ring"></i>
+                                        <li class="gradiante">
+                                            Notificaciones en tiempo real
+                                        </li>
+                                    </span>
+                                    <span>
+                                        <i class="fi fi-rr-chart-histogram"></i>
+                                        <li class="gradiante">
+                                            Estadísticas en tiempo real
+                                        </li>
+                                    </span>
+                                    <span>
+                                        <i class="fi fi-rr-checkbox"></i>
+                                        <li class="gradiante">
+                                            Aplicación fácil de usar
+                                        </li>
+                                    </span>
                                 </ul>
                             </div>
                         </div>
-                        <div class="slider-container">          
-                            <img class="slider-img" src="./img/_3a116389-758d-41aa-a3ac-b0e9eb7b47fd.jpeg" alt="Imagen 2">
-                            <img class="slider-img" src="./img/_8ba5a1b4-8bab-4fcd-98e3-10846b1ded38.jpeg" alt="Imagen 3">
-                            <img class="slider-img" src="./img/_759c7a08-c73f-4f8f-963c-f969ee9d76b2.jpeg" alt="Imagen 1">
+                        <div class="slider-container">
+                            <img class="slider-img" src="../img/tinacos/_09bad0bc-8b69-4f6e-86d4-7a7a45dce989.webp"
+                                alt="Imagen 2">
+                            <img class="slider-img" src="../img/tinacos/_90b2e226-ec92-46d9-ab14-e282b44c209d.webp"
+                                alt="Imagen 3">
+                            <img class="slider-img" src="../img/tinacos/_a0eb0738-61d4-4cd1-a91d-1f4eb6808b46.webp"
+                                alt="Imagen 1">
                             <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
                             <button class="next" onclick="plusSlides(1)">&#10095;</button>
                         </div>
                     </div>
                 </div>
             </article>
+            <div class="spacer"></div>
         </section>
 
-        <section class="snapp2">
+        <section id="pantalla2">
             <article>
                 <div>
                     <div>
@@ -116,38 +135,33 @@
             </article>
         </section>
 
-        <section class="snapp3">
+        <section id="pantalla3">
             <article>
-                <div>
-                    <div>
-                        <img src="" alt="imagen de un movil android">
-                    </div>
-                    <div>
-                        <h2>
-                            Aplicacion movil
-                        </h2>
-                    </div>
-                    <div>
+                <div class="descargar">
+                    <img src="../img/android.png" alt="">
+                    <div class="descargarbien">
+                        <h2 id="aplicacion"></h2>
                         <button>
                             Descargar
                         </button>
                     </div>
                     <div>
-                        <img src="" alt="imagen de un movil iOS">
+                        <img src="../img/ios.png" alt="imagen de un movil iOS">
                     </div>
                 </div>
             </article>
             <footer>
-                <ul>
-                    <li>Instagram</li>
-                    <li>Whastapp</li>
-                    <li>Gmail</li>
-                    <li>Facebook</li>
-                </ul>
+            </button><img src="../img/facebook.png" alt="">
+                <button>
+                    
+                <img src="../img/instagram.png" alt="">
+                <img src="../img/twitter.png" alt="">
+                <img src="../img/whatsapp.png" alt="">
+                <img src="../img/google.png" alt="">
             </footer>
         </section>
     </main>
 </body>
-<script src="./cosas.js"></script>
+<script src="../javascript/cosas.js"></script>
 
 </html>
